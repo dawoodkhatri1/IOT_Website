@@ -1,0 +1,167 @@
+body {
+  background-color: black;
+}
+
+.container-2 {
+  background: url(1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+span {
+    color: red;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container-3,
+.container-4,
+.container-5,
+.container-6 {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+    width: 300px;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  p {
+    width: 200px;
+  }
+}
+
+p {
+    width: 650px;
+}
+
+.form-area {
+  padding-top: 7%;
+}
+.row.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.left {
+  background: rgb(43, 46, 226);
+  padding: 200px 98px;
+}
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+.left h2 span {
+  font-weight: 100;
+}
+.single-form {
+  background: #fff;
+}
+.right {
+  padding: 70px 100px;
+  position: relative;
+}
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #fff;
+}
+.form-control {
+  border: 2px solid #000;
+}
+.right button {
+  border: none;
+  border-radius: 0;
+  background: #252525;
+  width: 180px;
+  color: #fff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.right button:hover {
+  background-color: #252525;
+}
+
+/*responsive*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+  .container-2 {
+    background: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+    .navbar {
+        width: 500px;
+    }
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google,
+.fa-instagram,
+.fa-linkedin,
+.fa-github {
+  font-size: 40px;
+  color: #f94ca4;
+}
